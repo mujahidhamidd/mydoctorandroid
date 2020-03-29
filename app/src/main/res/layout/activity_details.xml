@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#fff" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/circular_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/doctor"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor name"
+            android:letterSpacing="0.0025"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="start"
+            android:padding="4dp"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+
+
+
+
+
+            >
+
+            <ImageView
+
+                android:id="@+id/call"
+                android:layout_weight="1"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                 android:padding="4dp"
+                android:src="@drawable/ic_menu_share"
+                android:layout_gravity="start"
+               />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="055098654"
+                android:letterSpacing="0.0025"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:gravity="start"
+                android:padding="8dp"
+                android:textStyle="normal"
+                />
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+
+
+
+            >
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:src="@drawable/ic_menu_send"
+                android:layout_gravity="start"
+                />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riyadh"
+                android:letterSpacing="0.0025"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:gravity="start"
+                android:padding="8dp"
+                android:textStyle="normal"
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/qulification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor name"
+            android:letterSpacing="0.0025"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:gravity="start"
+            android:padding="4dp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        android:layout_marginTop="5dp"
+
+        android:weightSum="4"
+
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <Button
+            android:id="@+id/buttonapointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="apointment"
+            android:letterSpacing="0.0025"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+
+            android:background="@color/colorPrimary"
+           />
+
+        <Button
+            android:id="@+id/buttonmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Message"
+            android:letterSpacing="0.0025"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <Button
+            android:id="@+id/buttonrate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rate"
+            android:letterSpacing="0.0025"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            />
+
+
+        <Button
+            android:id="@+id/buttonarticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Articles"
+            android:letterSpacing="0.0025"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
