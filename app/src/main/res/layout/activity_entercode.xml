@@ -50,7 +50,7 @@
                 android:id="@+id/edittextcode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter code sent to your email"
+                android:hint="Enter the code we sent to you"
                 android:inputType="number"
                 android:letterSpacing="0.0025"
                 android:textColorHint="#7000"

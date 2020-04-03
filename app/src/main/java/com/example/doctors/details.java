@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -35,6 +36,7 @@ public class details extends AppCompatActivity {
 
         name =findViewById(R.id.name);
         qulification =findViewById(R.id.qulification);
+        qulification.setMovementMethod(new ScrollingMovementMethod());
 
         buttonmessage =findViewById(R.id.buttonmessage);
 

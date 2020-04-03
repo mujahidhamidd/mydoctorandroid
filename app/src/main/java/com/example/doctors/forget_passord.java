@@ -1,9 +1,14 @@
 package com.example.doctors;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.NotificationManager;
 import android.app.ProgressDialog;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -81,8 +86,16 @@ public class forget_passord extends AppCompatActivity  {
                             if(res.getString("result").equalsIgnoreCase("success")){
 
 
+                                NotificationCompat.Builder builder =
+                                        new NotificationCompat.Builder(forget_passord.this)
+                                                .setSmallIcon(R.drawable.ic_stat)
+                                                .setContentTitle("My doctor App")
+                                                .setContentText(res.getString("message")).setSound(Uri.parse(ContentResolver.SCHEME_ANDROID_RESOURCE
+                                                + "://" + forget_passord.this.getPackageName() + "/raw/notify"));
 
-
+                                // Add as notification
+                                NotificationManager manager = (NotificationManager) forget_passord.this.getSystemService(Context.NOTIFICATION_SERVICE);
+                                manager.notify(0, builder.build());
 
                                 Intent intent = new Intent(forget_passord.this, entercode.class);
                                 intent.putExtra("email", edittextemail.getText().toString());

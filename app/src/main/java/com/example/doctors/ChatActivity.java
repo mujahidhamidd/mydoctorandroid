@@ -127,6 +127,7 @@ public class ChatActivity extends AppCompatActivity {
                                 chatmessage.setUser_id(data.getString("user_id"));
                                 chatmessage.setName(data.getString("name"));
                                 chatmessage.setDoctor_name(data.getString("doctor_name"));
+                                chatmessage.setType(data.getString("type"));
 
 
 

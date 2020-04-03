@@ -86,8 +86,6 @@ public class apointment extends AppCompatActivity {
                 alarmMgr.set(AlarmManager.RTC_WAKEUP, calender.getTimeInMillis(), pendingIntent);
 
 
-                Log.d("jojo", timeString);
-                // insert into database
 
 
 
